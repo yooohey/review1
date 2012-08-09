@@ -1,6 +1,6 @@
 public class Person {
-	static String uji = new String("氏");
-	static String na = new String("名");
+	public static String uji = new String("氏");
+	public static String na = new String("名");
 	public String firstname = new String("");
 	public String lastname = new String("");
 
