@@ -1,8 +1,8 @@
 public class Person {
 	public static String uji = new String("氏");
 	public static String na = new String("名");
-	public String firstname = new String("");
-	public String lastname = new String("");
+	public String firstname;
+	public String lastname;
 
 	public String getfirstname(){
 		return this.firstname;
@@ -25,21 +25,17 @@ public class Person {
 	}
 
 	public static void main(String[] args){
-		String firstname1 = new String("渡辺");
-		String lastname1 = new String("高志");
-		String firstname2 = new String("和田");
-		String lastname2 = new String("充史");
 
-		this.setfirstname("firstname1");
-		this.setlastname("lastname1");
-		this.showname();
+		Person person1 = new Person();
+		person1.setfirstname("渡辺");
+		person1.setlastname("高志");
+		person1.showname();
 
-		this.setfirstname("firstname2");
-		this.setlastname("lastname2");
-		this.showname();
+		Person person2 = new Person();
+		person2.setfirstname("和田");
+		person2.setlastname("充史");
+		person2.showname();
 
-		this.setfirstname("firstname1");
-		this.setlastname("lastname1");
-		this.showname();
+		person1.showname();
 	}
 }
